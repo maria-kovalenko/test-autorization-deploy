@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autorization</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <!--  autorization without errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper autorization-card p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center">Добро пожаловать!</h3>
+          <p class="card__subtitle text-center">Войдите в свой аккаунт</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="email" class="form__label mb-1">E-mail</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="mail@mail.com"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен адрес электронной почты</span
+              >
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1">Неправильно введен пароль</span>
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label class="check__label">
+                <input type="checkbox" class="check__input" />
+                <div class="custom-checkbox"></div>
+                <span>Запомнить меня</span>
+              </label>
+
+              <div class="form__forgot-pass form__accent">
+                <a href="#">Забыли пароль?</a>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Войти
+            </button>
+          </form>
+          <p class="card__question text-center">
+            Нет аккаунта? <a href="#">Зарегистрироваться</a>
+          </p>
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- autorization  with errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper autorization-card p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center">Добро пожаловать!</h3>
+          <p class="card__subtitle text-center">Войдите в свой аккаунт</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="email" class="form__label mb-1">E-mail</label>
+              <input
+                type="email"
+                class="form__input invalid-field"
+                id="email"
+                placeholder="mail@mail.com"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен адрес электронной почты</span
+              >
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input invalid-field"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1">Неправильно введен пароль</span>
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label class="check__label">
+                <input type="checkbox" class="check__input" />
+                <div class="custom-checkbox"></div>
+                <span>Запомнить меня</span>
+              </label>
+
+              <div class="form__forgot-pass form__accent">
+                <a href="#">Забыли пароль?</a>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Войти
+            </button>
+          </form>
+          <p class="card__question text-center">
+            Нет аккаунта? <a href="#">Зарегистрироваться</a>
+          </p>
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line"></div>
+
+      <!-- registration without errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper registration-card p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button type="button" class="nav__link button">
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Вход
+              </button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center">Добро пожаловать!</h3>
+          <p class="card__subtitle text-center">Зарегистрируйтесь</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="number" class="form__label mb-1"
+                >Номер телефона</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="number"
+                placeholder="+7"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен номер телефона</span
+              >
+            </div>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="email" class="form__label mb-1">E-mail</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="mail@mail.com"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен адрес электронной почты</span
+              >
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error form__error--short-pass mt-1"
+                >Пароль слишком короткий. Минимально допустимое количество
+                символов: 8, включая буквы и цифры (Если не хватает
+                символов)</span
+              >
+              <span class="form__error form__error--empty-pass mt-1"
+                >Пароль слишком простой. Он должен содержать не менее 8
+                символов, включая буквы и цифры (Если нет букв)</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="repeat-password" class="form__label mb-1"
+                >Повторите пароль</label
+              >
+              <input
+                type="password"
+                class="form__input"
+                id="repeat-password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1"
+                >Пароли не совпадают. Пожалуйста, введите одинаковые
+                пароли</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label class="check__label">
+                <input type="checkbox" class="check__input" />
+                <div class="custom-checkbox"></div>
+                <span
+                  >Я принимаю условия
+                  <a href="#" class="form__accent">публичной оферты,</a>
+                  <a href="#" class="form__accent"
+                    >политики конфиденциальности</a
+                  >
+                  и даю согласие на обработку персональных данных.</span
+                >
+              </label>
+              <span class="form__error form__accept-terms ms-4"
+                >Для регистрации примите условия публичной оферты и политики
+                конфиденциальности</span
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Зарегистрироваться
+            </button>
+          </form>
+          <p class="card__question text-center">
+            Уже зарегистрированы? <a href="#">Войти</a>
+          </p>
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- registration with errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper registration-card p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button type="button" class="nav__link button">
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Вход
+              </button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center">Добро пожаловать!</h3>
+          <p class="card__subtitle text-center">Зарегистрируйтесь</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="number" class="form__label mb-1"
+                >Номер телефона</label
+              >
+              <input
+                type="number"
+                class="form__input invalid-field"
+                id="number"
+                placeholder="+7"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен номер телефона</span
+              >
+            </div>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="email" class="form__label mb-1">E-mail</label>
+              <input
+                type="email"
+                class="form__input invalid-field"
+                id="email"
+                placeholder="mail@mail.com"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен адрес электронной почты</span
+              >
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input invalid-field"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error form__error--short-pass mt-1"
+                >Пароль слишком короткий. Минимально допустимое количество
+                символов: 8, включая буквы и цифры (Если не хватает
+                символов)</span
+              >
+              <span class="form__error form__error--empty-pass mt-1"
+                >Пароль слишком простой. Он должен содержать не менее 8
+                символов, включая буквы и цифры (Если нет букв)</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="repeat-password" class="form__label mb-1"
+                >Повторите пароль</label
+              >
+              <input
+                type="password"
+                class="form__input invalid-field"
+                id="repeat-password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1"
+                >Пароли не совпадают. Пожалуйста, введите одинаковые
+                пароли</span
+              >
+              <span
+                class="form__password-icon form__password-icon--open"
+              ></span>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label class="check__label invalid-field">
+                <input type="checkbox" class="check__input" />
+                <div class="custom-checkbox"></div>
+                <span
+                  >Я принимаю условия
+                  <a href="#" class="form__accent">публичной оферты,</a>
+                  <a href="#" class="form__accent"
+                    >политики конфиденциальности</a
+                  >
+                  и даю согласие на обработку персональных данных.</span
+                >
+              </label>
+              <span class="form__error form__accept-terms ms-4"
+                >Для регистрации примите условия публичной оферты и политики
+                конфиденциальности</span
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Зарегистрироваться
+            </button>
+          </form>
+          <p class="card__question text-center">
+            Уже зарегистрированы? <a href="#">Войти</a>
+          </p>
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- registration success-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper card-success p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center mb-3">Поздравляем!</h3>
+          <p class="card__subtitle text-center">Вы успешно зарегистрированы</p>
+          <button class="button button--active d-block w-100 mb-3">
+            Начать работу
+          </button>
+          <button class="button button--secondary d-block w-100">
+            Связаться с поддержкой
+          </button>
+
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line"></div>
+
+      <!-- recovery enter-email-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper recovery-enter-email p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center">Восстановить пароль</h3>
+          <p class="card__subtitle text-center">Введите адрес почты</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group d-flex flex-column mb-3">
+              <label for="email" class="form__label mb-1">E-mail</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="mail@mail.com"
+              />
+              <span class="form__error mt-1"
+                >Неправильно введен адрес электронной почты</span
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Получить ссылку для восстановления
+            </button>
+          </form>
+
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- recovery send mail-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper card-success p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center mb-3">Успешно отправлено</h3>
+          <p class="card__subtitle text-center">
+            Ссылка на восстановление отправлена на указанную почту
+          </p>
+          <button type="submit" class="form__btn button d-block w-100">
+            Отлично
+          </button>
+
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- recovery password  without errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper recovery-password p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <h3 class="card__title text-center">Восстановить пароль</h3>
+          <p class="card__subtitle text-center">Придумайте новый пароль</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error form__error--short-pass mt-1"
+                >Пароль слишком короткий. Минимально допустимое количество
+                символов: 8, включая буквы и цифры (Если не хватает
+                символов)</span
+              >
+              <span class="form__error form__error--empty-pass mt-1"
+                >Пароль слишком простой. Он должен содержать не менее 8
+                символов, включая буквы и цифры (Если нет букв)</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="repeat-password" class="form__label mb-1"
+                >Повторите новый пароль</label
+              >
+              <input
+                type="password"
+                class="form__input"
+                id="repeat-password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1"
+                >Пароли не совпадают. Пожалуйста, введите одинаковые
+                пароли</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Создать новый пароль
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- recovery password with errors-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper recovery-password p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <h3 class="card__title text-center">Восстановить пароль</h3>
+          <p class="card__subtitle text-center">Придумайте новый пароль</p>
+          <form class="card__form form" novalidate>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="password" class="form__label mb-1">Пароль</label>
+              <input
+                type="password"
+                class="form__input invalid-field"
+                id="password"
+                placeholder="******"
+              />
+
+              <span class="form__error form__error--short-pass mt-1"
+                >Пароль слишком короткий. Минимально допустимое количество
+                символов: 8, включая буквы и цифры (Если не хватает
+                символов)</span
+              >
+              <span class="form__error form__error--empty-pass mt-1"
+                >Пароль слишком простой. Он должен содержать не менее 8
+                символов, включая буквы и цифры (Если нет букв)</span
+              >
+              <span
+                class="form__password-icon form__password-icon--close"
+              ></span>
+            </div>
+            <div class="form__group form__password d-flex flex-column mb-3">
+              <label for="repeat-password" class="form__label mb-1"
+                >Повторите новый пароль</label
+              >
+              <input
+                type="password"
+                class="form__input invalid-field"
+                id="repeat-password"
+                placeholder="******"
+              />
+
+              <span class="form__error mt-1"
+                >Пароли не совпадают. Пожалуйста, введите одинаковые
+                пароли</span
+              >
+              <span
+                class="form__password-icon form__password-icon--open"
+              ></span>
+            </div>
+
+            <button
+              type="submit"
+              class="form__btn button button--disable d-block w-100"
+            >
+              Создать новый пароль
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- recovery success-->
+<section class="section">
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center justify-content-sm-center justify-content-lg-end"
+    >
+      <div class="card-wrapper card-success p-0 flex-shrink-0">
+        <div class="card d-flex flex-column">
+          <ul class="card__nav nav justify-content-center">
+            <li class="nav__item me-3">
+              <button
+                type="button"
+                class="nav__link button button--transparrent"
+              >
+                Регистрация
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav__link button">Вход</button>
+            </li>
+          </ul>
+          <h3 class="card__title text-center mb-3">Успешно</h3>
+          <p class="card__subtitle text-center">
+            Войдите в аккаунт с новым паролем
+          </p>
+          <button type="submit" class="form__btn button d-block w-100">
+            Войти
+          </button>
+
+          <p class="card__login-with text-center mt-auto">
+            Или войдите с помощью
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-1">
+              <img src="./img/yandex-icon.svg" alt="Yandex" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/google-icon.svg" alt="Google" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/vk-icon.svg" alt="VK" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/mail-icon.svg" alt="Mail" width="48" />
+            </a>
+            <a href="#" class="mx-1">
+              <img src="./img/sber-icon.svg" alt="Sber" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line"></div>
+
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
